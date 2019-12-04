@@ -27,4 +27,5 @@ for idx, image in enumerate(images):
    image_url = image.attrs['src']
    r = requests.get(image_url, allow_redirects=True)
    open(f'basostore{idx}.jpg', 'wb').write(r.content)
+   # robots.txt limits visits to 1 every 2 seconds:
    sleep(2)
