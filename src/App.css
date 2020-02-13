@@ -23,7 +23,9 @@ header {
 
 .baso-hello {
   margin: 10px;
-  width: 100%;
+  object-fit: cover;
+  width: 70vw;
+  height: 30vw;
 }
 
 img {
